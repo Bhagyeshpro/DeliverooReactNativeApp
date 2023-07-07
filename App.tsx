@@ -4,7 +4,7 @@ import React from 'react'
 const App = () => {
   return (
     <View className="flex-1 bg-cyan-300 justify-center items-center">
-      <Text className="text-5xl font-bold text-gray-600">NativeWind</Text>
+      <Text className="text-5xl font-bold text-gray-600">Navigation</Text>
     </View>
   )
 }
