@@ -3,8 +3,8 @@ import React from 'react'
 
 const App = () => {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: "#059599"}}>
-      <Text style={{ fontSize: 40, fontWeight: "bold" }}>NativeWind</Text>
+    <View className="flex-1 bg-cyan-300 justify-center items-center">
+      <Text className="text-5xl font-bold text-gray-600">NativeWind</Text>
     </View>
   )
 }
