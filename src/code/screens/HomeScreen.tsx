@@ -1,14 +1,17 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+// HomeScreen.js
+import React from 'react';
+import { View, Text, Button } from 'react-native';
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
     <View>
-      <Text>HomeScreen</Text>
+      <Text>Home Screen</Text>
+      <Button
+        title="Go to Detail"
+        onPress={() => navigation.navigate('Detail')}
+      />
     </View>
-  )
-}
+  );
+};
 
-export default HomeScreen
-
-const styles = StyleSheet.create({})
+export default HomeScreen;

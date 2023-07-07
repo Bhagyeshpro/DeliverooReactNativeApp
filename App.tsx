@@ -1,14 +1,22 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+// Screens
+import HomeScreen from './src/code/screens/HomeScreen';
+import DetailScreen from './src/code/screens/DetailScreen';
+
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <View className="flex-1 bg-cyan-300 justify-center items-center">
-      <Text className="text-5xl font-bold text-gray-600">Navigation</Text>
-    </View>
-  )
-}
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Detail" component={DetailScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
 
-export default App
-
-const styles = StyleSheet.create({})
+export default App;
